@@ -221,14 +221,12 @@ pip install -r requirements.txt
 
 Drop CSVs into `dat_dir/`. Full file list and size notes: [`dat_dir/README.md`](dat_dir/README.md).
 
-| File | In git? | Notes |
-|------|---------|--------|
-| `indeed_webscrape.csv` | Yes (small) | Indeed scrapes |
-| `linkedin_historical.csv` | No (~40 MB) | Skills / historical LinkedIn |
-| `linkedin_no_skills.csv` | No (~75 MB) | Titles + dates (JSON payload) |
-| `linkedin_no_skills_cleaned.csv` | No (generated) | From `clean_linkedin.py` |
-
-Large LinkedIn files are **gitignored** on purpose — clones stay light. Keep them locally, or share via Drive / a Release / Git LFS.
+| File | Notes |
+|------|--------|
+| `indeed_webscrape.csv` | Indeed scrapes |
+| `linkedin_historical.csv` | Skills / historical LinkedIn |
+| `linkedin_no_skills.csv` | Titles + dates (JSON payload) |
+| `linkedin_no_skills_cleaned.csv` | From `clean_linkedin.py` |
 
 ---
 
