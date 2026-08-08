@@ -141,7 +141,7 @@ Everything that needs a path goes through `config.py`. Scripts under `analysis/`
 ## Repository layout
 
 ```text
-job-market-analysis/
+Job-Market-Analysis/
 ├── analysis/                 # Cleaning, EDA, main ARIMA forecast
 │   ├── clean_linkedin.py
 │   ├── clean_skills_plot.py
@@ -159,7 +159,6 @@ job-market-analysis/
 ├── dat_dir/                  # Input (+ cleaned) CSVs  → see dat_dir/README.md
 ├── graph_dir/                # Generated charts (PNG)
 ├── output_dir/               # Generated result tables (CSV)
-├── docs/llm_validation/      # Optional validation write-ups (PDF)
 ├── config.py                 # Single source of truth for folders
 ├── dashboard.py              # Streamlit control panel
 ├── requirements.txt
@@ -174,7 +173,7 @@ job-market-analysis/
 | `output_dir/` | Every tabular result scripts save |
 | `analysis/` | Day-to-day pipeline |
 | `forecasting/` | “Is this forecast any good?” suite |
-| `config.py` | Portable paths — no hardcoded machine folders |
+| `config.py` | Portable paths — no hardcoded machine(local) folders |
 
 ---
 
